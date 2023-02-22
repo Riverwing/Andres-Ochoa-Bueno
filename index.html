@@ -10,24 +10,39 @@
     <link rel="stylesheet" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         #logo {
             max-height: 15vh;
+        }
+
+        i {
+            color: #31D2F2;
+            font-size: 30px;
+        }
+
+        span {
+            width: fit-content;
         }
     </style>
 </head>
 
 <body class="vh-100 bg-info bg-gradient bg-opacity-25">
     <header class="sticky-top border-bottom border-secondary border-4">
-        <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse,   -->
+        <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
-            <div class="container-fluid "><!-- creamos un contenedor de tipo fluid -->
+            <div class="container-fluid justify-content-around justify-content-lg-start">
+                <!-- creamos un contenedor de tipo fluid -->
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="images/logo/logo.png" alt="logo" id="logo" class="img-fluid">
-                    <span class="display-3 text-white m-auto">Palaspadel</span>
+                    <span class="display-3 text-white d-none d-sm-block ">Palaspadel</span>
                 </a>
 
             </div>
-            <div class="container-fluid justify-content-end">
+
+            <div class="container-fluid justify-content-center">
                 <!-- boton para cuando el display sea menor -->
                 <button class="navbar-toggler mt-3 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                     aria-controls="menu" aria-expanded="false">
@@ -37,55 +52,102 @@
                 <!-- div todos los elementos, el id lo usaremos para refernciarlo y así llamoarlo desde el boton -->
                 <div class="collapse navbar-collapse justify-content-around d-lg-flex align-items-center" id="menu">
                     <ul class="navbar-nav text-center">
+                        <hr class="d-lg-none border border-info border-1 opacity-50">
                         <li class="nav-item">
-                            <a class="nav-link active" href="">
-                                <span>Opcion</span>
+                            <a class="nav-link active" href="index.html">
+                                <span>Inicio</span>
                             </a>
+                            <hr class="d-lg-none border border-info border-1 opacity-50">
+                        </li>
+
+                        <li class="nav-item dropdown ">
+
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="menu_desplegable">
+                                <span>Pádel</span>
+                            </a>
+
+                            <!-- clase dropdown menu el atribito sirve para nombrarlo y así llamarlo, actua como un id  -->
+                            <ul class="dropdown-menu" aria-labelledby="menu_desplegable">
+                                <li class="dropdown-item">
+                                    <a class="nav-link " href="palas.html">
+                                        <span class="text-dark">Palas</span>
+                                    </a>
+                                </li>
+                                <!-- con la clase nav-link cambia el formato del enlace -->
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="partes.html">
+                                        <span class="text-dark">Partes pala</span>
+                                    </a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="pista.html">
+                                        <span class="text-dark">Pista de padel</span>
+                                    </a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="pelota.html">
+                                        <span class="text-dark">Pelota de padel</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                            <hr class="d-lg-none border border-info border-1 opacity-50">
+                        </li>
+
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <span>Opcion1</span>
+                            <a class="nav-link" href="ranking.html">
+                                <span>Ranking</span>
                             </a>
+                            <hr class="d-lg-none border border-info border-1 opacity-50">
+                        </li>                     
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="clubs.html">
+                                <span>Clubs</span>
+                            </a>
+                            <hr class="d-lg-none border border-info border-1 opacity-50">
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <span>Opcion1</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <span>Opcion1</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <span>Opcion1</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
+                            <a class="nav-link" href="about.html">
                                 <span>About us</span>
                             </a>
+                            <hr class="d-lg-none border border-info border-1 opacity-50">
                         </li>
                     </ul>
 
                     <form action="post" class="d-flex ">
-                        <input type="search" class="form-control me-2 border-0" placeholder="Buscar una pala ...">
+                        <input type="search"
+                            class="form-control me-2 text-dark-emphasis bg-info-subtle border border-dark-subtle"
+                            placeholder="Buscar una pala ...">
                         <button type="button" class=" btn btn-info">Buscar</button>
                     </form>
-
-
-
                 </div>
+            </div>
 
+            <div class="d-flex">
+                <a class="" href="formulario.html">
+                    <i class="bi bi-person-fill"> </i>
+                </a>
             </div>
         </nav>
     </header>
+
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
 
 
     <!-- carrusel -->
@@ -95,17 +157,26 @@
 
 
     <!-- Footer -->
-    <footer class=" mt-5 p-2  fixed-bottom bg-dark text-white border-top border-secondary border-4 ">
-        <div class="container-fluid row justify-content-around">
-            <div class="row">
-                <p>Andrés Ochoa Bueno</p>
-                <p>Realizado con bootstrap</p>
-                <a href="https://www.linkedin.com/in/Andr%C3%A9sOchoaBueno" style="width: fit-content;">
-                    <i class="bi bi-linkedin" style="color: #31D2F2; font-size: 30px;"></i>
-                </a>
-                <a href="" style="width: fit-content;">
-                    <i class="bi bi-github" style="color: #31D2F2;font-size: 30px;"></i>
-                </a>
+    <footer class=" mt-5 p-2 fixed-bottom bg-dark border-top border-secondary border-4 ">
+        <div class="container-fluid">
+            <div
+                class="row row-cols-md-2 row-cols-lg-3 row-gap-3 justify-content-around align-items-center text-center text-white">
+                <p class="col-sm-12">Andrés Ochoa Bueno</p>
+                <p class="col-sm-12">Realizado con bootstrap</p>
+                <div class="d-flex justify-content-around">
+                    <a href="https://www.linkedin.com/in/Andr%C3%A9sOchoaBueno" target="_blank"
+                        class="text-decoration-none w-auto">
+                        <i class="bi bi-linkedin">
+                            <span class="d-none d-md-inline text-white">LinkedIn</span>
+                        </i>
+                    </a>
+                    <a href="https://github.com/Riverwing/Andres-Ochoa-Bueno" target="_blank"
+                        class="text-decoration-none w-auto">
+                        <i class="bi bi-github">
+                            <span class="d-none d-md-inline text-white">GitHub</span>
+                        </i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
