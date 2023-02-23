@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <style>
-        html {
-            scroll-behavior: smooth;
+        body {
+            scroll-behavior: smooth;    
+                
         }
 
         #logo {
@@ -26,10 +27,22 @@
         span {
             width: fit-content;
         }
+
+
+        /* Propias del index */
+        .c-item {
+            height: 65vh;
+        }
+
+        .c-image {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.5);
+        }
     </style>
 </head>
 
-<body class="vh-100 bg-info bg-gradient bg-opacity-25">
+<body class="vh-100 bg-info bg-gradient bg-opacity-25 container-fluid">
     <header class="sticky-top border-bottom border-secondary border-4">
         <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
@@ -138,23 +151,82 @@
         </nav>
     </header>
 
-    <!-- breadcrumb -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-    </nav>
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="d-block m-auto">
+
+        <!-- breadcrumb -->
+        <section>
+            <nav aria-label="breadcrumb" class="m-2">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+        </section>
+
+        <!-- carrusel -->
+        <section>
+            <h3 class="text-center m-auto p-1">Principales secciones de la página </h3>
+
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner container-fluid">
+                    <div class="carousel-item c-item active" data-bs-interval="3000">
+                        <img src="images/carrusel/palas_carousel.jpg" class="d-block w-100 c-image"
+                            alt="palas carrusel">
+                        <div class="carousel-caption d-block top-50 m-0">
+                            <p class=" fs-3">Visita nuestra sección de palas.</p>
+                            <a href="palas.html">
+                                <button type="button" class="btn btn-info">Descubre las palas</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item " data-bs-interval="3000">
+                        <img src="images/carrusel/jugardores_carousel.jpg" class="d-block w-100 c-image "
+                            alt="jugadores carrusel">
+                        <div class="carousel-caption d-block top-50 m-0">
+                            <p class=" fs-3">Conoce el ranking de los jugadores WPT.</p>
+                            <a href="ranking.html">
+                                <button type="button" class="btn btn-info">Descubre los jugadores </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item ">
+                        <img src="images/carrusel/clubs.jpg" class="d-block w-100 c-image" alt="club padel carrousel">
+                        <div class="carousel-caption d-block top-50 m-0">
+                            <p class=" fs-3">Disfruta el padel en tu ciudad.</p>
+                            <a href="clubs.html">
+                                <button type="button" class="btn btn-info">Descubre los clubs de pádel </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
 
 
-    <!-- carrusel -->
-
+    </main>
 
 
 
 
     <!-- Footer -->
-    <footer class=" mt-5 p-2 fixed-bottom bg-dark border-top border-secondary border-4 ">
+    <footer class="d-block mt-5 p-2  bg-dark border-top border-secondary border-4">
         <div class="container-fluid">
             <div
                 class="row row-cols-md-2 row-cols-lg-3 row-gap-3 justify-content-around align-items-center text-center text-white">
