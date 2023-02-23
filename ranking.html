@@ -23,6 +23,10 @@
             font-size: 30px;
         }
 
+        main {
+            min-height: 75vh;
+        }
+
         span {
             width: fit-content;
         }
@@ -138,23 +142,192 @@
         </nav>
     </header>
 
-    <!-- breadcrumb -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Library</li>
-        </ol>
-    </nav>
+
+    <main>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb" class="m-2">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Ranking</li>
+            </ol>
+        </nav>
 
 
-    <!-- carrusel -->
+        <section> <!-- tabla masculina -->
+            <!-- table-struped para que sea de tipo zebra, 
+                table-hover para que anime cuando pasamos el ratón por encima, 
+                table-sm para reducir su paddin a la mitad en smartphones
+                table-group-divider para poner divisores y border-top-color para dar colores,
+                <caption>rankin masculion</caption> para ayudar a los usuarios en entender la tabla, si ponemos caption-top aparecerá arriba
+                table-responsive para tener scroll horizonta  en las tablas, podemos poner overflow-y: hidden para que no aparezca código vertical
+                          
+            -->
+            <h3 class="text-center p-1">Ranking masculino </h3>
+            <table
+                class="table table-striped table-hover table-info table-sm table-responsive-sm table-bordered w-75 mx-auto">
+                <caption>Ranking masculino</caption>
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Posición</th>
+                        <th scope="col">Jugador</th>
+                        <th scope="col">Puntos</th>
+                        <th scope="col">Nacionalidad</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Alejandro Galán Romo</td>
+                        <td>13055</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Juan Lebrón Chincoa</td>
+                        <td>13055</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Francisco Navarro Compán</td>
+                        <td>7555</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Martín Dinenno</td>
+                        <td>11910</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Carlos Daniel Gutiérrez</td>
+                        <td>9010</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Agustín Tapia</td>
+                        <td>8770</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Ale Ruiz Granados</td>
+                        <td>7555</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Franco Stupaczuk</td>
+                        <td>7515</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Fernando Belasteguín</td>
+                        <td>6675</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Federico Chingoto</td>
+                        <td>6515</td>
+                        <td>Argentina</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section><!-- tabla femenina -->
+            <h3 class="text-center p-1">Ranking Femenino</h3>
+            <table
+                class="table table-striped table-hover table-secondary table-sm table-responsive-sm table-bordered w-75 mx-auto">
+                <caption>Ranking femenino</caption>
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Posición</th>
+                        <th scope="col">Jugador</th>
+                        <th scope="col">Puntos</th>
+                        <th scope="col">Nacionalidad</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Alejandro Galán Romo</td>
+                        <td>13055</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Juan Lebrón Chincoa</td>
+                        <td>13055</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Francisco Navarro Compán</td>
+                        <td>7555</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Martín Dinenno</td>
+                        <td>11910</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Carlos Daniel Gutiérrez</td>
+                        <td>9010</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Agustín Tapia</td>
+                        <td>8770</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Ale Ruiz Granados</td>
+                        <td>7555</td>
+                        <td>España</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Franco Stupaczuk</td>
+                        <td>7515</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Fernando Belasteguín</td>
+                        <td>6675</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Federico Chingoto</td>
+                        <td>6515</td>
+                        <td>Argentina</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+
 
 
 
 
 
     <!-- Footer -->
-    <footer class=" mt-5 p-2 fixed-bottom bg-dark border-top border-secondary border-4 ">
+    <footer class=" mt-5 p-2 bg-dark border-top border-secondary border-4 ">
         <div class="container-fluid">
             <div
                 class="row row-cols-md-2 row-cols-lg-3 row-gap-3 justify-content-around align-items-center text-center text-white">

@@ -11,12 +11,16 @@
 
     <style>
         body {
-            scroll-behavior: smooth;    
-                
+            scroll-behavior: smooth;
+
         }
 
         #logo {
             max-height: 15vh;
+        }
+
+        main {
+            min-height: 75vh;
         }
 
         i {
@@ -42,7 +46,7 @@
     </style>
 </head>
 
-<body class="vh-100 bg-info bg-gradient bg-opacity-25 container-fluid">
+<body class="vh-100 bg-info bg-gradient bg-opacity-25 ">
     <header class="sticky-top border-bottom border-secondary border-4">
         <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
@@ -153,32 +157,32 @@
 
     <!-- CONTENIDO PRINCIPAL -->
 
-    <main class="d-block m-auto">
+    <main>
 
         <!-- breadcrumb -->
         <section>
             <nav aria-label="breadcrumb" class="m-2">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+
                 </ol>
             </nav>
         </section>
 
         <!-- carrusel -->
         <section>
-            <h3 class="text-center m-auto p-1">Principales secciones de la página </h3>
+            <h3 class="text-center p-1">Principales secciones de la página </h3>
 
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel"><!-- slide para que se deslice -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner container-fluid">
+                <div class="carousel-inner">
                     <div class="carousel-item c-item active" data-bs-interval="3000">
-                        <img src="images/carrusel/palas_carousel.jpg" class="d-block w-100 c-image"
+                        <img src="images/carrusel/palas_carousel.jpg" class="d-lg-block w-100 c-image img-fluid"
                             alt="palas carrusel">
                         <div class="carousel-caption d-block top-50 m-0">
                             <p class=" fs-3">Visita nuestra sección de palas.</p>
@@ -188,7 +192,7 @@
                         </div>
                     </div>
                     <div class="carousel-item c-item " data-bs-interval="3000">
-                        <img src="images/carrusel/jugardores_carousel.jpg" class="d-block w-100 c-image "
+                        <img src="images/carrusel/jugardores_carousel.jpg" class="d-block w-100 c-image img-fluid"
                             alt="jugadores carrusel">
                         <div class="carousel-caption d-block top-50 m-0">
                             <p class=" fs-3">Conoce el ranking de los jugadores WPT.</p>
@@ -197,8 +201,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-item c-item ">
-                        <img src="images/carrusel/clubs.jpg" class="d-block w-100 c-image" alt="club padel carrousel">
+                    <div class="carousel-item c-item" data-bs-interval="3000">
+                        <img src="images/carrusel/clubs.jpg" class="d-block w-100 c-image img-fluid"
+                            alt="club padel carrousel">
                         <div class="carousel-caption d-block top-50 m-0">
                             <p class=" fs-3">Disfruta el padel en tu ciudad.</p>
                             <a href="clubs.html">
