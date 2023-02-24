@@ -1,4 +1,3 @@
-
 /* HEADER AND FOOTER, PLANTILLA COMUN */
 html {
     scroll-behavior: smooth;
@@ -21,41 +20,99 @@ span {
     width: fit-content;
 }
 
-/* MAIN */
+/* MAIN, intenntamos poner caracteristicas de bootstrap como letra, tamaño y algún margin especifico de los párrafos*/
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-   
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+
 }
-section{
-    max-width: 75vh;
+
+section {
+    width: 75%;
+    background-color: #ffe38e;
+    padding: 2rem;
+    border-bottom: 2px solid #31D2F2;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 /* ANIMACIÓN PELOTA */
-.pelota{
-    background-image: url(/Interfaces/Andres-Ochoa-Bueno/images/sprite/pelotas_spritesheet_png.png);
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    /* que los eleementos hijos se alineen en columna, eje principal y */
+    justify-content: center;
+    /* el eje principal (y) lo centramos  */
+    align-items: center;
+    /* el eje secundario (x) lo centramos */
+}
+
+.sprite {
+    width: fit-content;
+    /* que ocupen el contenido  */
+    background-color: #31D2F2;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: bold;
+    /* lo ponemos para que se muestre el segundo */
+
+}
+
+.pelota {
+    position: relative;
+    background-image: url(../images/sprite/pelotas_spritesheet_png.png);
     width: 75px;
     height: 75px;
+    left: 50%;
+    transform: translate(-50%)
 }
 
-.pelota:hover{
-    animation: mover .50s steps(4,end) infinite;
+.sprite * {
+    cursor: pointer;
+}
+
+#cortado:checked ~.pelota{
+    animation: cortado .50s steps(4, end) infinite;
+}
+
+#liftado:checked ~.pelota{
+    animation: liftado .50s steps(4, end) infinite;
 }
 
 
 
-
- /* @keyframes permite controlar los pasos intermedios en una secuencia de animación CSS a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación. */
- @keyframes mover {
+/* @keyframes permite controlar los pasos intermedios en una secuencia de animación CSS a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación. */
+@keyframes cortado {
     from {
         background-position: 0px 0px;
     }
 
     to {
         background-position: 300px 0px;
+    }
+
+}
+
+@keyframes liftado {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: -300px 0px;
     }
 
 }
