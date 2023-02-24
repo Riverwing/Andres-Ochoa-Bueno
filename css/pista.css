@@ -1,0 +1,22 @@
+
+/* HEADER AND FOOTER, PLANTILLA COMUN */
+html {
+    scroll-behavior: smooth;
+}
+
+#logo {
+    max-height: 15vh;
+}
+
+main {
+    min-height: 75vh;
+}
+
+i {
+    color: #31D2F2;
+    font-size: 30px;
+}
+
+span {
+    width: fit-content;
+}

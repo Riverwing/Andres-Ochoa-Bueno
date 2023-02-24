@@ -1,0 +1,61 @@
+
+/* HEADER AND FOOTER, PLANTILLA COMUN */
+html {
+    scroll-behavior: smooth;
+}
+
+#logo {
+    max-height: 15vh;
+}
+
+main {
+    min-height: 75vh;
+}
+
+i {
+    color: #31D2F2;
+    font-size: 30px;
+}
+
+span {
+    width: fit-content;
+}
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+   
+}
+section{
+    max-width: 75vh;
+}
+
+/* ANIMACIÓN PELOTA */
+.pelota{
+    background-image: url(/Interfaces/Andres-Ochoa-Bueno/images/sprite/pelotas_spritesheet_png.png);
+    width: 75px;
+    height: 75px;
+}
+
+.pelota:hover{
+    animation: mover .50s steps(4,end) infinite;
+}
+
+
+
+
+ /* @keyframes permite controlar los pasos intermedios en una secuencia de animación CSS a lo largo de la secuencia de animación que debe ser alcanzado por determinados puntos durante la animación. */
+ @keyframes mover {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 300px 0px;
+    }
+
+}
