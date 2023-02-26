@@ -1,4 +1,3 @@
-
 /* HEADER AND FOOTER, PLANTILLA COMUN */
 html {
     scroll-behavior: smooth;
@@ -19,4 +18,187 @@ i {
 
 span {
     width: fit-content;
+}
+
+
+/* MAIN, intenntamos poner caracteristicas de bootstrap como letra, tamaño y algún margin especifico de los párrafos*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+
+}
+
+section {
+    width: 50%;
+    background-color: #ffe38e;
+    padding: 2rem;
+    border-bottom: 2px solid #31D2F2;
+}
+
+
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Para moviles y tables en vertical */
+@media (max-width:460px) {
+
+    /* de 0 a 481 */
+    .col-s-12 {
+        width: 75%;
+    }
+
+    #contenedor {
+        margin-top: 1px;
+        height: 200px;
+        width: 360px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-image: url(../images/map/pista_pade-360.jpg);
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 810px) {
+
+    /* de 0 a 481 */
+    #contenedor {
+        margin-top: 1px;
+        height: 462px;
+        width: 810px;
+        border: 1px solid black;
+        position: relative;
+        background-image: url(../images/map/pista_pade-810.jpg);
+    }
+
+}
+
+
+@media (min-width:815px) {
+
+    #contenedor {
+        margin-top: 3px;
+        height: 581px;
+        width: 1019px;
+        border: 1px solid black;
+        position: relative;
+    }
+
+    #imagen {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../images/map/pista_mapa.png);
+        z-index: -1000;
+    }
+
+    #exterior1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 1019px;
+        height: 164px;
+    }
+
+    #exterior2 {
+        position: absolute;
+        top: 504px;
+        left: 0px;
+        width: 1019px;
+        height: 75px;
+    }
+
+    #exterior3 {
+        position: absolute;
+        top: 155px;
+        left: 0px;
+        width: 160px;
+        height: 339px;
+        transform: rotate(-8deg) skew(-15deg);
+    }
+
+    #exterior4 {
+        position: absolute;
+        top: 140px;
+        left: 860px;
+        width: 160px;
+        height: 380px;
+        opacity: 0.5;
+        transform: rotate(-28deg) skew(-20deg);
+
+    }
+
+    #saque1 {
+        position: absolute;
+        top: 165px;
+        left: 160px;
+        width: 105px;
+        height: 335px;
+        transform: skew(-6deg);
+    }
+
+    #saque2 {
+        position: absolute;
+        top: 165px;
+        left: 750px;
+        width: 105px;
+        height: 335px;
+        transform: skew(6deg);
+    }
+
+    #interior {
+        position: absolute;
+        top: 165px;
+        left: 280px;
+        width: 455px;
+        height: 335px;
+    }
+
+
+    #exterior1:hover~#imagen {
+        background: url(../images/map/pista_mapa.png) 0px -579px;
+    }
+
+    #exterior2:hover~#imagen {
+        background: url(../images/map/pista_mapa.png) 0px -579px;
+    }
+
+    #exterior3:hover~#imagen {
+        background: url(../images/map/pista_mapa.png) 0px -579px;
+    }
+
+    #exterior4:hover~#imagen {
+        background: url(../images/map/pista_mapa.png) 0px -579px;
+    }
+
+    #saque1:hover~#imagen {
+        background: url(../images/map/pista_mapa.png) 0px -1158px;
+    }
+
+    #saque2:hover~#imagen {
+        background: url(../images/map/pista_mapa.png) 0px -1158px;
+    }
+
+    #interior:hover~#imagen {
+        background: url(../images/map/pista_mapa.png) 0px -1739px;
+    }
+
+
+    
+
+
+
+
 }

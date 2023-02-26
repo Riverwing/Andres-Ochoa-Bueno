@@ -50,6 +50,16 @@ section p {
     margin-bottom: 1rem;
 }
 
+/* Para moviles y tables en vertical */
+@media only screen and (max-width:991px) {
+
+    /* de 0 a 481 */
+    .col-s-12 {        
+        width: 75%;
+    }
+
+}
+
 /* ANIMACIÓN PELOTA */
 .contenedor {
     display: flex;
@@ -63,14 +73,22 @@ section p {
 
 .sprite {
     width: fit-content;
-    /* que ocupen el contenido  */
     background-color: #31D2F2;
     border: 1px solid black;
     border-radius: 25px;
     padding: 15px;
     font-weight: bold;
-    /* lo ponemos para que se muestre el segundo */
+}
 
+
+.sprite * {
+    cursor: pointer;
+}
+
+.sprite input {
+    margin-right: 10px;
+    margin-left: 3px;
+    margin-bottom: 20px;
 }
 
 .pelota {
@@ -82,15 +100,12 @@ section p {
     transform: translate(-50%)
 }
 
-.sprite * {
-    cursor: pointer;
-}
 
-#cortado:checked ~.pelota{
+#cortado:checked~.pelota {
     animation: cortado .50s steps(4, end) infinite;
 }
 
-#liftado:checked ~.pelota{
+#liftado:checked~.pelota {
     animation: liftado .50s steps(4, end) infinite;
 }
 
@@ -118,3 +133,5 @@ section p {
     }
 
 }
+
+

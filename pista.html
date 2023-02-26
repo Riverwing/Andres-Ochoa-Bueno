@@ -8,30 +8,10 @@
     <title>Pista de pádel</title>
     <link rel="shortcut icon" type="image" href="images/logo/logo.ico">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css" >
-    
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+    <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/pista.css">
 
-        #logo {
-            max-height: 15vh;
-        }
 
-        main {
-            min-height: 75vh;
-        }
-
-        i {
-            color: #31D2F2;
-            font-size: 30px;
-        }
-
-        span {
-            width: fit-content;
-        }
-    </style>
 </head>
 
 <body class="vh-100 bg-info bg-gradient bg-opacity-25">
@@ -144,7 +124,7 @@
     </header>
 
     <!-- breadcrumb -->
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" class="m-2 d-none d-md-block">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Pista</li>
@@ -152,12 +132,61 @@
     </nav>
 
 
-    <!-- pista padel -->
+    <!-- pista padel 
+        Mapa de imágenes sin hacer uso de la etiqueta <map> donde al colocarnos
+encima de un elemento este cambiará de color. (De forma similar al ejercicio
+visto en clase de animales marinos).
+ -->
+    <main>
+        <section class="col-s-12 mt-1  mt-md-0">
+            <h2>Pista de pádel</h2>
+            <h5>Como es una pista de pádel</h5>
+            <p>Después de la pala de pádel y la pelota lo más importante para jugar a este deporte en condiciones es una
+                pista de pádel. Tienen que tener unas medidas y una dimensión específica, según el reglamento.</p>
+            <p>Una pista de pádel tiene que tener <strong>10 metros de ancho por 20 metros de largo.</strong> De esta
+                manera, cada mitad de
+                la pista está formada por un cuadrado de 10 metros por 10 metros. Esto significa que el campo de pádel
+                tiene
+                dos partes simétricas.</p>
+            <p>El <strong> interior de la pista</strong> también tiene que cumplir con unas medidas específicas. Entre
+                la
+                pared y la línea de
+                saque tiene que haber una distancia de 3 metros. Además, cada línea de la pista deberá tener un grosor
+                concreto de 5 cm. Estas tienen que ser blancas o de un color que las hagas perfectamente distinguibles
+                de la
+                superficie de la pista.</p>
+            <p>El <strong>perímetro de la pista está cerrado por cuatro paredes</strong>. La altura de cada una de estas
+                paredes tiene que
+                ser de 3 metros como mínimo. Las paredes laterales pueden tener una forma rectangular de 3 metros de
+                altura
+                y 4 metros de longitud en escalón, según el tipo europeo.</p>
+            <p>Los <strong>fondos</strong> tienen que tener una altura mínima de <strong>cuatro metros.</strong> Pueden
+                estar fabricados con distintos
+                materiales: pared estándar, cristal o plástico.</p>
+            <p>En la <strong>superficie</strong> se pueden usar tres materiales: césped sintético, cemento o moqueta.
+                Tanto el césped como la
+                moqueta es bueno que tengan un poco de arena especial para que así el movimiento en la pista sea más
+                fácil.
+                Los colores de la superficie pueden ser, reglamento en mano, azul, verde o pardo-terroso.</p>
 
-    <img src="images/map/pista_padel.jpg" alt="">
+
+        </section>
 
 
+        <div id="contenedor">
+           
+            <div id="exterior1"></div>
+            <div id="exterior2"></div>
+            <div id="exterior3"></div>
+            <div id="exterior4"></div>
+            <div id="saque1"></div>
+            <div id="saque2"></div>
+            <div id="interior"></div>
+            <div id="imagen"></div>
+        </div>
 
+
+    </main>
 
 
     <!-- Footer -->
