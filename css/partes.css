@@ -18,7 +18,6 @@ i {
 
 span {
     width: fit-content;
-    float: right;
 }
 
 
@@ -36,7 +35,7 @@ main {
 
 section {
     width: 50%;
-    background-color: #ffe38e;  
+    background-color: #ffe38e;
     padding: 2rem;
     border-bottom: 2px solid #31D2F2;
 }
@@ -56,54 +55,89 @@ section p {
 
 /* PARTES DE LA PALA */
 
-imagen img{   
-  margin-left: 50%;
-  margin-right: 50%;
-  
-    
+.imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 label {
     display: none;
     position: absolute;
-    background-color: white;
     border: 1px solid black;
     padding: 5px;
-    
+    color: #31D2F2;
+    background-color: #212529;
+    border-radius: 50px;
+
 }
+
 
 #protector:hover+label {
     display: block;
-    top: 500px;
-    left: 15px;
+    top: 860px;
+    left: 1060px;
 }
 
 #marco:hover+label {
     display: block;
-    top: 500px;
-    left: 15px;
+    top: 1050px;
+    left: 1050px;
 }
 
 #cordon:hover+label {
     display: block;
-    top: 500px;
-    left: 15px;
+    top: 1300px;
+    left: 1100px;
 }
 
 #grip:hover+label {
     display: block;
-    top: 500px;
-    left: 15px;
+    top: 1250px;
+    left: 960px;
 }
+
 #cabeza:hover+label {
     display: block;
-    top: 500px;
-    left: 15px;
+    top: 1000px;
+    left: 740px;
 }
 
 #puente:hover+label {
     display: block;
-    top: 500px;
-    left: 15px;
+    top: 1150px;
+    left: 780px;
+
+}
+
+/* Para moviles y tables en vertical */
+@media (max-width:460px) {
+
+    /* de 0 a 481 */
+    .col-s-12 {
+        width: 75%;
+    }
+
+    .imagen img {
+        display: none;
+    }
+
+    .imagen h5 {
+        display: none;
+    }
+
+    .imagen {
+        display: block;
+        background-image: url(../images/partes/partes_pala_350.png);
+        height: 350px;
+
+    }
+
+}
+
+@media (max-width:1800px) {
+
+    .imagen h5 {
+        display: none;
+    }
 }
