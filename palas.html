@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palas</title>
     <link href="tailwind/dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="images/logo/logo.ico">
+    <!--  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
     <style>
         #logo {
             max-height: 15vh;
@@ -25,13 +30,13 @@
     </style>
 </head>
 
-<body class="scroll-smooth">
-    <header class="sticky-top  border-gray-600 border-b-4">
+<body class="scroll-smooth 100 h-full bg-teal-500/90  "><!-- no hace efecto opacity-25 ni bg-gradient  -->
+    <header class="sticky-top ">
         <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
-        <nav class="relative flex flex-wrap items-center content-between py-3 px-4  text-white bg-gray-900/90 p-2">
-            <div class="container mx-auto sm:px-4 max-w-full justify-center lg:justify-start">
+        <nav class=" bg-gray-900/90  border-gray-600 border-b-4 p-2 py-3 px-4  text-white">
+            <div class="container flex flex-wrap items-center justify-between mx-auto max-w-full lg:justify-start">
                 <!-- creamos un contenedor de tipo fluid -->
-                <a class="inline-block pt-1 pb-1 mr-4 text-lg whitespace-no-wrap items-center m-0" href="index.html">
+                <a class="flex items-center" href="index.html">
                     <img src="images/logo/logo.png" alt="logo" id="logo" class="max-w-full max-h">
                     <span class="text-3xl text-white hidden sm:block ">Palaspadel</span>
                 </a>
@@ -149,19 +154,16 @@
 
             <nav class="w-full rounded-md">
                 <ol class="list-reset flex">
-                  <li>
-                    <a
-                      href="#"
-                      class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
-                      >Home</a
-                    >
-                  </li>
-                  <li>
-                    <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
-                  </li>
-                  <li class="text-neutral-500 dark:text-neutral-400">Library</li>
+                    <li>
+                        <a href="#"
+                            class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Home</a>
+                    </li>
+                    <li>
+                        <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                    </li>
+                    <li class="text-neutral-500 dark:text-neutral-400">Library</li>
                 </ol>
-              </nav>
+            </nav>
         </section>
     </main>
 </body>
