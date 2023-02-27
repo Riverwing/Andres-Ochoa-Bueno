@@ -110,7 +110,8 @@ label {
 
 }
 
-/* Para moviles y tables en vertical */
+/* RESPONSIVE */
+/* Para moviles  */
 @media (max-width:460px) {
 
     /* de 0 a 481 */
@@ -134,10 +135,15 @@ label {
     }
 
 }
+/* NO QUIERO QUE SE MUESTRE SI NO ES PARA PANTALLA DE ESCRITORIO */
 
 @media (max-width:1800px) {
 
     .imagen h5 {
+        display: none;
+    }
+
+    .imagen map {
         display: none;
     }
 }
