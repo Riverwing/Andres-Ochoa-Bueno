@@ -326,35 +326,101 @@
             </table>
         </section>
 
-        <!-- cards jugadores -->
+        <!-- cards jugadores masculinos y femeninos-->
         <section class="w-75 mx-auto">
             <h3 class="text-center p-1 mt-1 mt-md-0">Los número 1 masculino</h3>
             <div class="row row-cols-1 row-cols-md-2 ">
                 <div class="col">
                     <div class="card h-100 bg-dark text-white">
                         <div class="imagen w-25 mx-auto ">
-                            <img src="images/jugadores/ale.png" class="card-img-top img-fluid object-fit-contain"  alt="...">
+                            <img src="images/jugadores/ale.png" class="card-img-top img-fluid object-fit-contain"
+                                alt="...">
                         </div>
-                        <div class="card-body bg-secondary">
-                            <h5 class="card-title text-center">Alejandro Galán Romo</h5>
-                            <p class="card-text">Jugador de reves, su compañero es Juan Lebrón.</p>
-                        </div>
-                        <div class="card-footer bg-info-subtle">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+
+                        <button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#exp1"
+                            aria-expanded="false">
+                            Pulsa aquí para descubrirlo
+                        </button>
+
+                        <div id="exp1" class="collapse">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Alejandro Galán Romo</h5>
+                                <p class="card-text">Jugador de reves, su compañero es Juan Lebrón.</p>
+                            </div>
+                            <div class="card-footer bg-info-subtle text-lg-end">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100 bg-dark text-white">
                         <div class="imagen w-25 mx-auto">
-                            <img src="images/jugadores/lebron.png" class="card-img-top img-fluid object-fit-contain"  alt="...">
+                            <img src="images/jugadores/lebron.png" class="card-img-top img-fluid object-fit-contain"
+                                alt="...">
                         </div>
-                        <div class="card-body bg-secondary">
-                            <h5 class="card-title text-center">Juan Lebrón Chincoa</h5>
-                            <p class="card-text">Jugador de derecha, su compañero es Alejandro Galán.</p>
+
+                        <button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#exp2"
+                            aria-expanded="false">
+                            Pulsa aquí para descubrirlo
+                        </button>
+
+                        <div id="exp2" class="collapse">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Juan Lebrón Chincoa</h5>
+                                <p class="card-text">Jugador de derecha, su compañero es Alejandro Galán.</p>
+                            </div>
+                            <div class="card-footer bg-info-subtle text-lg-end">
+                                <small class="text-muted">Last updated 5 mins ago</small>
+                            </div>
                         </div>
-                        <div class="card-footer bg-info-subtle">
-                            <small class="text-muted">Last updated 5 mins ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center p-1 mt-2 mt-md-5">Las número 1 Femenino</h3>
+            <div class="row row-cols-1 row-cols-md-2 ">
+                <div class="col">
+                    <div class="card h-100 bg-dark text-white">
+                        <div class="imagen w-25 mx-auto ">
+                            <img src="images/jugadores/salazar.PNG" class="card-img-top img-fluid object-fit-contain"
+                                alt="...">
+                        </div>
+                        <button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#exp3"
+                            aria-expanded="false">
+                            Pulsa aquí para descubrirla
+                        </button>
+
+                        <div id="exp3" class="collapse">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Alejandra Salazar</h5>
+                                <p class="card-text">Jugadora de derecha, su compañera es Gemma Triay.</p>
+                            </div>
+                            <div class="card-footer bg-danger-subtle text-lg-end">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-dark text-white">
+                        <div class="imagen w-25 mx-auto">
+                            <img src="images/jugadores/triay.png" class="card-img-top img-fluid object-fit-contain"
+                                alt="...">
+                        </div>
+                        <button class="btn btn-primary " type="button" data-bs-toggle="collapse" data-bs-target="#exp4"
+                            aria-expanded="false">
+                            Pulsa aquí para descubrirla
+                        </button>
+
+                        <div id="exp4" class="collapse">
+                            <div class="card-body bg-secondary">
+                                <h5 class="card-title text-center">Gemma Triay</h5>
+                                <p class="card-text">Jugadora de revés, su compañero es Alejandra Salazar.</p>
+                            </div>
+                            <div class="card-footer bg-danger-subtle text-lg-end">
+                                <small class="text-muted">Last updated 5 mins ago</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -362,7 +428,35 @@
 
             </div>
         </section>
-        <section><!-- imagenes jugadores --></section>
+
+
+        <section><!-- imagenes jugadores -->
+            <h3 class="text-center p-1 mt-2 mt-md-5">Más top players</h3>
+            <!-- Moviles >576px(md) una sola columna, en tablets  768px and up tres columnas, en escritorio  992px and up cinco columnas -->
+            <div class="container-fluid mt-md-0 mt-lg-2 ">
+                <div class="row row-cols-lg-5 row-gap-3 w-75 mx-auto">
+
+                    <img src="images/jugadores/1_paquito.PNG" alt="1" class="col-sm-12 col-md-4 img-thumbnail bg-dark ">
+
+                    <img src="images/jugadores/2_dineno.PNG" alt="2" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+
+                    <img src="images/jugadores/4_sanyo.PNG" alt="3" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+
+                    <img src="images/jugadores/5_png.PNG" alt="4" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+
+                    <img src="images/jugadores/6_aleRuiz.PNG" alt="5" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+
+                    <img src="images/jugadores/7_stupa.PNG" alt="6" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+
+                    <img src="images/jugadores/3_bela.PNG" alt="7" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+
+                    <img src="images/jugadores/8_chingo.PNG" alt="8" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+
+                    <img src="images/jugadores/9_tello.PNG" alt="9" class="col-sm-12 col-md-4  img-thumbnail bg-dark">
+               
+
+                </div>
+        </section>
     </main>
 
 

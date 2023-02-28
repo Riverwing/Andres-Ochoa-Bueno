@@ -44,7 +44,7 @@
         <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
 
-             <!-- LOGO  -->
+            <!-- LOGO  -->
             <div class="container-fluid justify-content-center justify-content-lg-start">
                 <!-- creamos un contenedor de tipo fluid -->
                 <a class="navbar-brand d-flex align-items-center m-0" href="index.html">
@@ -167,30 +167,37 @@
                 <!-- una columna será para la imagen de fondo y la otra para el formulario -->
                 <div class="row">
                     <!--IMAGEN-->
-                    <div class="col bg d-none d-md-block col-md-4 rounded-start-5 "> </div><!-- le metemeos una imagen de fondo  -->
-                   
-                   <!-- FORMULARIO -->
+                    <div class="col bg d-none d-md-block col-md-4 rounded-start-5 "> </div>
+                    <!-- le metemeos una imagen de fondo  -->
+
+                    <!-- FORMULARIO -->
                     <div class="col p-1 p-sm-5"><!-- contenido del formulario -->
                         <div class="text-end mt-2">
-                            <img src="images/logo/logo.png" alt="logo" width="48" >
+                            <img src="images/logo/logo.png" alt="logo" width="48">
                         </div>
-                        <h2 class="fw-bold text-center py-2">Iniciar sesión</h2><!-- con py-5 le damos un pt-5 y pb-5  -->
+                        <h2 class="fw-bold text-center py-2">Iniciar sesión</h2>
+                        <!-- con py-5 le damos un pt-5 y pb-5  -->
                         <!-- LOGIN CON INPUT -->
-                        <form action="formulario.html ">
+                        <form action="formulario.html" class="was-validated">
                             <div class="mb-4"><!-- con martin bot de 4 -->
-                                <label for="email" class="form-label">Usuario o Email</label>
-                                <input type="email" class="form-control" name="email">
+                                <label for="email" class="form-label"> Email</label>
+                                <input type="email" class="form-control" name="email" required> <!-- .is-invalid and .is-valid. para que ponga el check verde o el simbolo de error -->
+                                <div class="valid-feedback">
+                                    Tiene buena pinta!
+                                </div>
+
                             </div>
                             <div class="mb-4">
                                 <label for="pass" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" name="pass">
+                                <input type="password" class="form-control" name="pass" required>
                             </div>
                             <div class="mb-4 form-check "><!-- Para el checkbox, form-check le da un espaciado -->
                                 <label for="conectado" class="form-check-label">Mantenerme conectado</label>
                                 <input type="checkbox" class="form-check-input" name="conectado" id="conectado">
                             </div>
                             <div class="d-grid"><!-- pueda expandirs en todo el ancho del contenedor -->
-                                <button type="submit" class="btn btn-info  border-3 border-secondary">Iniciar sesión</button>
+                                <button type="submit" class="btn btn-info  border-3 border-secondary">Iniciar
+                                    sesión</button>
                             </div>
                             <div class="my-3">
                                 <span>¿No tienes cuenta? <a href="#">Registrate aquí</a></span>
@@ -236,6 +243,9 @@
                     </div>
                 </div>
             </div>
+
+            
+
 
         </section>
     </main>
