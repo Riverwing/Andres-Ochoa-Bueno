@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palas</title>
+    <link href="tailwind/dist/output.css" rel="stylesheet">
+    <link href="tailwind/src/input.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="images/logo/logo.ico">
+    <!--   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        #logo {
+            max-height: 15vh;
+        }
+
+        main {
+            min-height: 75vh;
+        }
+
+        i {
+            color: #31D2F2;
+            font-size: 30px;
+        }
+
+        span {
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body class="scroll-smooth h-full bg-bootstrap-info bg-opacity-30 ">
+    <header class="sticky-top">
+        <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
+        <!--  -->
+        <nav
+            class="flex flex-row content-between align-middle flex-nowrap justify-between gap-4 bg-bootstrap-gray ">
+            <!-- LOGO -->
+            <div>
+                <a class="flex items-center" href="index.html">
+                    <img src="images/logo/logo.png" alt="logo" id="logo" class="max-w-full max-h">
+                    <span class="text-3xl text-white hidden sm:block ">Palaspadel</span>
+                </a>
+            </div>
+            <!-- MENU -->
+            <div class="flex flex-row align-middle">
+
+
+               
+                <div>
+                    <a class="inline-block py-2 px-4 no-underline active" href="index.html">
+                        <span  class="text-white">Inicio</span>
+                    </a>
+                </div>
+                <!-- DESPLEGABLE -->
+                <div>
+                    <a class="inline-block py-2 px-4 no-underline w-0 h-0 ml-1 align border-b-0 border-t-1 border-r-1 border-l-1"
+                        href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="menu_desplegable">
+                        <span  class="text-white">Pádel</span>
+                    </a>
+                    <div>
+
+                        <a class="inline-block py-2 px-4 no-underline " href="palas.html">
+                            <span class="text-white">Palas</span>
+                        </a>
+
+                        <a class="inline-block py-2 px-4 no-underline" href="partes.html">
+                            <span class="text-white">Partes pala</span>
+                        </a>
+
+                        <a class="inline-block py-2 px-4 no-underline" href="pista.html">
+                            <span class="text-white">Pista de padel</span>
+                        </a>
+
+                        <a class="inline-block py-2 px-4 no-underline" href="pelota.html">
+                            <span class="text-white">Pelota de padel</span>
+                        </a>
+
+                    </div> <!-- fin del menu desplegable -->
+
+                    <a class="inline-block py-2 px-4 no-underline" href="ranking.html">
+                        <span class="text-white">Ranking</span>
+                    </a>
+
+                    <a class="inline-block py-2 px-4 no-underline" href="clubs.html">
+                        <span class="text-white">Clubs</span>
+                    </a>
+                    <a class="inline-block py-2 px-4 no-underline" href="about.html">
+                        <span class="text-white">About us</span>
+                    </a>
+
+                </div>
+
+
+
+
+
+
+                <form method="post" class="flex py-4">
+                    <input type="search"
+                        class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800  border-gray-200 rounded me-2 text-dark-emphasis bg-info-subtle border border-dark-subtle"
+                        placeholder="Buscar una pala ...">
+                    <button type="button"
+                        class=" inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-bootstrap-info text-black hover:bg-bootstrap-info/90">Buscar</button>
+                </form>
+                <a class="" href="formulario.html">
+                    <i class="bi bi-person-fill"> </i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- breadcrumb -->
+        <section>
+
+            <nav class="w-full rounded-md">
+                <ol class="list-reset flex">
+                    <li>
+                        <a href="#"
+                            class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Home</a>
+                    </li>
+                    <li>
+                        <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                    </li>
+                    <li class="text-neutral-500 dark:text-neutral-400">Library</li>
+                </ol>
+            </nav>
+        </section>
+    </main>
+</body>
+
+</html>
