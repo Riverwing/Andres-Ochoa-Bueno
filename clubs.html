@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs</title>
+    <link href="tailwind/dist/output.css" rel="stylesheet">
+    <link href="tailwind/src/input.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image" href="images/logo/logo.ico">
+    <!--   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        #logo {
+            max-height: 15vh;
+        }
+
+        main {
+            min-height: 75vh;
+        }
+
+        i {
+            color: #31D2F2;
+            font-size: 30px;
+        }
+
+        span {
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body class="scroll-smooth 100 h-full bg-bootstrap-info bg-opacity-30 ">
+    <header class="sticky-top ">
+        <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
+        <nav class=" flex flex-row bg-bootstrap-gray border-gray-600 border-b-4 p-2 py-3 px-4 text-bootstrap-letra ">
+            <div class="container flex flex-wrap items-center justify-between mx-auto max-w-full lg:justify-start">
+                <!-- creamos un contenedor de tipo fluid -->
+                <a class="flex items-center" href="index.html">
+                    <img src="images/logo/logo.png" alt="logo" id="logo" class="max-w-full max-h">
+                    <span class="text-3xl text-white hidden sm:block ">Palaspadel</span>
+                </a>
+
+            </div>
+
+            <div class="container flex flex-wrap max-w-full mx-auto sm:px-4 items-center">
+                <!-- boton para cuando el display sea menor -->
+                <button type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    data-collapse-toggle="menu" aria-controls="menu" aria-expanded="false">
+                    <span class="sr-only px-5 py-1 border border-gray-600 rounded"></span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+
+
+                <!-- div todos los elementos, el id lo usaremos para refernciarlo y así llamoarlo desde el boton -->
+                <div class="hidden flex-grow items-center justify-around lg:flex" id="menu">
+                    <ul class="flex flex-wrap list-reset pl-0 mb-0 text-center">
+                        <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
+                        <li class="">
+                            <a class="inline-block py-2 px-4 no-underline" href="index.html">
+                                <span class="dark:hover:text-white">Inicio</span>
+                            </a>
+                            <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
+                        </li>
+
+                        <li class=" relative ">
+                            <div class="relative inline-block text-left">
+
+                                <button type="button" class="inline-flex w-full justify-center gap-x-1.5  px-3 py-2 ">
+                                    <span class="dark:hover:text-white">Pádel</span>
+                                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+
+                                <div id="menu"
+                                    class="absolute hidden focus:block mt-2 w-56 bg-white shadow-lg focus:outline-none">
+                                    <div class="py-1">
+                                        <ul class="text-left">
+                                            <li>
+                                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                                <a href="palas.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-0">Palas</a>
+                                            </li>
+                                            <li>
+                                                <a href="partes.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-1">Partes pala</a>
+                                            </li>
+                                            <li>
+                                                <a href="pista.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-2">Pista de padel</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="pelota.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-2">Pelota de padel</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+
+
+                        <li class="">
+                            <a class="inline-block py-2 px-4 no-underline" href="ranking.html">
+                                <span class="dark:hover:text-white">Ranking</span>
+                            </a>
+                            <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
+                        </li>
+
+                        <li class="">
+                            <a class="inline-block py-2 px-4 no-underline" href="clubs.html">
+                                <span class="dark:hover:text-white text-white">Clubs</span>
+                            </a>
+                            <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
+                        </li>
+
+                        <li class="">
+                            <a class="inline-block py-2 px-4 no-underline" href="about.html">
+                                <span class="dark:hover:text-white">About us</span>
+                            </a>
+                            <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
+                        </li>
+                    </ul>
+
+                    <form method="post" class="flex ">
+                        <input type="search"
+                            class="block  w-full py-1 px-2 mb-1  bg-bootstrap-info bg-opacity-70 text-gray-800  border-gray-200 rounded me-2 border border-dark-subtle"
+                            placeholder="Buscar una pala ...">
+                        <button type="button"
+                            class=" inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-bootstrap-info text-black hover:bg-bootstrap-info/90">Buscar</button>
+                    </form>
+                </div>
+                <div class="flex content-end">
+                    <a class="" href="formulario.html">
+                        <i class="bi bi-person-fill"> </i>
+                    </a>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+    <main>
+
+        <!-- breadcrumb -->
+        <section>
+
+            <nav class="w-full rounded-md m-2">
+                <ol class="list-reset flex">
+                    <li>
+                        <a href="index.html" class="text-blue-500 underline">Home</a>
+                    </li>
+                    <li>
+                        <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
+                    </li>
+                    <li class="text-neutral-500 dark:text-neutral-400">Clubs</li>
+                </ol>
+            </nav>
+        </section>
+
+        <!-- CLUBS DE PADEL -->
+
+
+
+        <section>
+            <h3 class="text-center p-1 hidden md:block text-2xl">Clubs de pádel</h3>
+
+            <div
+            id="carouselExampleControls"
+            class="relative"
+            data-te-carousel-init
+            data-te-carousel-slide>
+            <div
+              class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+              <div
+                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item
+                data-te-carousel-active>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                  class="block w-full"
+                  alt="Wild Landscape" />
+              </div>
+              <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+                  class="block w-full"
+                  alt="Camera" />
+              </div>
+              <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item>
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+                  class="block w-full"
+                  alt="Exotic Fruits" />
+              </div>
+            </div>
+            <button
+              class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-te-target="#carouselExampleControls"
+              data-te-slide="prev">
+              <span class="inline-block h-8 w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </span>
+              <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Previous</span
+              >
+            </button>
+            <button
+              class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-te-target="#carouselExampleControls"
+              data-te-slide="next">
+              <span class="inline-block h-8 w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </span>
+              <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Next</span
+              >
+            </button>
+          </div>
+
+        </section>
+    </main>
+
+
+    <footer class=" bg-bootstrap-gray border-gray-600 border-t-4 p-2 py-3 px-4 text-bootstrap-letra">
+        <div class="max-w-full">
+            <div class="flex flex-row justify-around items-center text-center text-white">
+                <p class="w-auto">Andrés Ochoa Bueno</p>
+                <p class="w-auto">Realizado con bootstrap</p>
+                <div class="flex justify-around">
+                    <a href="https://www.linkedin.com/in/Andr%C3%A9sOchoaBueno" target="_blank"
+                        class="text-decoration-none w-auto">
+                        <i class="bi bi-linkedin">
+                            <span class="d-none d-md-inline text-white">LinkedIn</span>
+                        </i>
+                    </a>
+                    <a href="https://github.com/Riverwing/Andres-Ochoa-Bueno" target="_blank"
+                        class="text-decoration-none w-auto">
+                        <i class="bi bi-github">
+                            <span class="d-none d-md-inline text-white">GitHub</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

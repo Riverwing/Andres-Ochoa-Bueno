@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["../*.{html,js}", "./src/**/*.{js,jsx,ts,tsx}", "./src/**/*.{html,js}"],
+  content: [ "../clubs.html","../palas.html"],
   theme: {
     extend: {
 
@@ -22,8 +22,17 @@ module.exports = {
         '3xl': '4rem',
         '4xl': '2.441rem',
         '5xl': '3.052rem',
+      },
+
+      textUnderlineOffset: {
+        3: '3px',
       }
 
+    },
+  },
+  variants:{
+    extend:{
+      display:['group-focus']
     },
   },
   plugins: [],

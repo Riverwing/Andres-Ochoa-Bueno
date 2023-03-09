@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -64,73 +64,78 @@
                     <ul class="flex flex-wrap list-reset pl-0 mb-0 text-center">
                         <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
                         <li class="">
-                            <a class="inline-block py-2 px-4 no-underline active" href="index.html">
-                                <span>Inicio</span>
+                            <a class="inline-block py-2 px-4 no-underline" href="index.html">
+                                <span class="dark:hover:text-white">Inicio</span>
                             </a>
                             <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
                         </li>
 
                         <li class=" relative ">
+                            <div class="relative inline-block text-left">
 
-                            <a class="inline-block py-2 px-4 no-underline w-0 h-0 ml-1 align border-b-0 border-t-1 border-r-1 border-l-1"
-                                href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                id="menu_desplegable">
-                                <span>Pádel</span>
-                            </a>
+                                <button type="button" class="inline-flex w-full justify-center gap-x-1.5  px-3 py-2 ">
+                                    <span class="text-white">Pádel</span>
+                                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
 
-                            <!-- clase dropdown menu el atribito sirve para nombrarlo y así llamarlo, actua como un id  -->
-                            <ul class=" absolute left-0 z-50 float-left hidden list-reset	 py-2 mt-1 text-base bg-white border border-gray-300 rounded p-0"
-                                aria-labelledby="menu_desplegable">
-                                <li
-                                    class="block w-full py-1 px-6 font-normal text-gray-900 whitespace-no-wrap active border-b border-gray-900 border-2 ">
-                                    <a class="inline-block py-2 px-4 no-underline " href="palas.html">
-                                        <span class="text-gray-900">Palas</span>
-                                    </a>
-                                </li>
-                                <!-- con la clase nav-link cambia el formato del enlace -->
-                                <li>
-                                </li>
-                                <li
-                                    class="block w-full py-1 px-6 font-normal text-gray-900 whitespace-no-wrap  border-b border-gray-900 border-2 ">
-                                    <a class="inline-block py-2 px-4 no-underline" href="partes.html">
-                                        <span class="text-gray-900">Partes pala</span>
-                                    </a>
-                                </li>
-                                <li
-                                    class="block w-full py-1 px-6 font-normal text-gray-900 whitespace-no-wrap border-b border-gray-900 border-2 ">
-                                    <a class="inline-block py-2 px-4 no-underline" href="pista.html">
-                                        <span class="text-gray-900">Pista de padel</span>
-                                    </a>
-                                </li>
-                                <li
-                                    class="block w-full py-1 px-6 font-normal text-gray-900 whitespace-no-wrap border-0">
-                                    <a class="inline-block py-2 px-4 no-underline" href="pelota.html">
-                                        <span class="text-gray-900">Pelota de padel</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
+                                <div id="menu"
+                                    class="absolute hidden focus:block mt-2 w-56 bg-white shadow-lg focus:outline-none">
+                                    <div class="py-1">
+                                        <ul class="text-left">
+                                            <li>
+                                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                                <a href="palas.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-0">Palas</a>
+                                            </li>
+                                            <li>
+                                                <a href="partes.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-1">Partes pala</a>
+                                            </li>
+                                            <li>
+                                                <a href="pista.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-2">Pista de padel</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="pelota.html"
+                                                    class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
+                                                    role="menuitem" tabindex="-1" id="menu-item-2">Pelota de padel</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </li>
 
-                        </li>
+
 
                         <li class="">
                             <a class="inline-block py-2 px-4 no-underline" href="ranking.html">
-                                <span>Ranking</span>
+                                <span class="dark:hover:text-white">Ranking</span>
                             </a>
                             <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
                         </li>
 
                         <li class="">
                             <a class="inline-block py-2 px-4 no-underline" href="clubs.html">
-                                <span>Clubs</span>
+                                <span class="dark:hover:text-white">Clubs</span>
                             </a>
                             <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
                         </li>
 
                         <li class="">
                             <a class="inline-block py-2 px-4 no-underline" href="about.html">
-                                <span>About us</span>
+                                <span class="dark:hover:text-white">About us</span>
                             </a>
                             <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
                         </li>
@@ -138,7 +143,7 @@
 
                     <form method="post" class="flex ">
                         <input type="search"
-                            class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800  border-gray-200 rounded me-2 text-dark-emphasis bg-info-subtle border border-dark-subtle"
+                            class="block  w-full py-1 px-2 mb-1  bg-bootstrap-info bg-opacity-70 text-gray-800  border-gray-200 rounded me-2 border border-dark-subtle"
                             placeholder="Buscar una pala ...">
                         <button type="button"
                             class=" inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-bootstrap-info text-black hover:bg-bootstrap-info/90">Buscar</button>
@@ -159,20 +164,286 @@
         <!-- breadcrumb -->
         <section>
 
-            <nav class="w-full rounded-md">
+            <nav class="w-full rounded-md m-2">
                 <ol class="list-reset flex">
                     <li>
-                        <a href="#"
-                            class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Home</a>
+                        <a href="index.html" class="text-blue-500 underline">Home</a>
                     </li>
                     <li>
                         <span class="mx-2 text-neutral-500 dark:text-neutral-400">/</span>
                     </li>
-                    <li class="text-neutral-500 dark:text-neutral-400">Library</li>
+                    <li class="text-neutral-500 dark:text-neutral-400">Palas padel</li>
                 </ol>
             </nav>
         </section>
+
+        <!-- PALAS DE PADEL -->
+
+        <h3 class="text-center p-1 hidden md:block text-2xl">Palas de pádel</h3>
+
+        <section class="py-1">
+            <div class="mx-auto grid max-w-6xl  grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <article
+                    class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+
+                    <div class="relative flex items-end overflow-hidden rounded-xl">
+                        <img src="images/palas/multi.jpg" alt="pala" />
+                        <div
+                            class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+
+                            <button class="text-sm">Comprar
+
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700">ADIDAS ADIPOWER MULTIWEIGHT CTRL</h2>
+                        <p class="mt-1 text-sm text-slate-400">Control, Adidas</p>
+
+                        <div class="mt-3 flex items-end justify-between">
+                            <p class="text-lg font-bold text-blue-500">399,95€</p>
+
+                            <div
+                                class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                <a target="_blank"
+                                    href="https://www.padelnuestro.com/adidas-adipower-multiweight-ctrl-2023-p-32939.html">
+
+                                    <button class="text-sm">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article
+                    class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+
+                    <div class="relative flex items-end overflow-hidden rounded-xl">
+                        <img src="images/palas/metalbone.jpg" alt="pala" />
+                        <div
+                            class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+
+                            <button class="text-sm">Comprar
+
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700">ADIDAS METALBONE HRD 3.2 2023</h2>
+                        <p class="mt-1 text-sm text-slate-400">Potencia, Adidas</p>
+
+                        <div class="mt-3 flex items-end justify-between">
+                            <p class="text-lg font-bold text-blue-500">389,95€</p>
+
+                            <div
+                                class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                <a target="_blank"
+                                    href="https://www.padelnuestro.com/adidas-metalbone-hrd-32-2023-p-32917.html">
+
+                                    <button class="text-sm">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+
+                    <div class="relative flex items-end overflow-hidden rounded-xl">
+                        <img src="images/palas/OSIRIS.jpg" alt="pala" />
+                        <div
+                            class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+
+                            <button class="text-sm">Comprar
+
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700">STARVIE BASALTO OSIRIS 2.0 2023L</h2>
+                        <p class="mt-1 text-sm text-slate-400">Potencia, Starvie</p>
+
+                        <div class="mt-3 flex items-end justify-between">
+                            <p class="text-lg font-bold text-blue-500">261,00€</p>
+
+                            <div
+                                class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                <a target="_blank"
+                                    href="https://www.padelnuestro.com/starvie-basalto-osiris-20-2023-p-33171.html">
+
+                                    <button class="text-sm">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+
+                    <div class="relative flex items-end overflow-hidden rounded-xl">
+                        <img src="images/palas/DRONOSUSS.jpg" alt="pala" />
+                        <div
+                            class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+
+                            <button class="text-sm">Comprar
+
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700">STARVIE DRONOS GALAXY SPEED 2.0 </h2>
+                        <p class="mt-1 text-sm text-slate-400">Polivalente, Starvie</p>
+
+                        <div class="mt-3 flex items-end justify-between">
+                            <p class="text-lg font-bold text-blue-500">242,91€</p>
+
+                            <div
+                                class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                <a target="_blank"
+                                    href="https://www.padelnuestro.com/starvie-dronos-galaxy-speed-20-2023-p-33158.html">
+
+                                    <button class="text-sm">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article
+                    class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
+
+                    <div class="relative flex items-end overflow-hidden rounded-xl">
+                        <img src="images/palas/babolat.jpg" alt="pala" />
+                        <div
+                            class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-4 w-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>
+
+                            <button class="text-sm">Comprar
+
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="mt-1 p-2">
+                        <h2 class="text-slate-700">BABOLAT TECHNICAL VERON 2022</h2>
+                        <p class="mt-1 text-sm text-slate-400">Potencia, Babolat</p>
+
+                        <div class="mt-3 flex items-end justify-between">
+                            <p class="text-lg font-bold text-blue-500">158,45€</p>
+
+                            <div
+                                class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                <a target="_blank"
+                                    href="https://www.padelnuestro.com/babolat-technical-veron-2022-p-26913.html">
+
+                                    <button class="text-sm">Comprar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+
+        </section>
     </main>
+
+
+    <footer class=" bg-bootstrap-gray border-gray-600 border-t-4 p-2 py-3 px-4 text-bootstrap-letra">
+        <div class="max-w-full">
+            <div class="flex flex-row justify-around items-center text-center text-white">
+                <p class="w-auto">Andrés Ochoa Bueno</p>
+                <p class="w-auto">Realizado con bootstrap</p>
+                <div class="flex justify-around">
+                    <a href="https://www.linkedin.com/in/Andr%C3%A9sOchoaBueno" target="_blank"
+                        class="text-decoration-none w-auto">
+                        <i class="bi bi-linkedin">
+                            <span class="d-none d-md-inline text-white">LinkedIn</span>
+                        </i>
+                    </a>
+                    <a href="https://github.com/Riverwing/Andres-Ochoa-Bueno" target="_blank"
+                        class="text-decoration-none w-auto">
+                        <i class="bi bi-github">
+                            <span class="d-none d-md-inline text-white">GitHub</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
