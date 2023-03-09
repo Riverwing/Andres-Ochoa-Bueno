@@ -34,7 +34,7 @@
 <body class="scroll-smooth 100 h-full bg-bootstrap-info bg-opacity-30 ">
     <header class="sticky-top ">
         <!--para decir que es menu usamos la clase navbar, con navbar-expand-lg sea menor se colapse   -->
-        <nav class="bg-bootstrap-gray border-gray-600 border-b-4 p-2 py-3 px-4  text-white ">
+        <nav class=" flex flex-row bg-bootstrap-gray border-gray-600 border-b-4 p-2 py-3 px-4 text-bootstrap-letra ">
             <div class="container flex flex-wrap items-center justify-between mx-auto max-w-full lg:justify-start">
                 <!-- creamos un contenedor de tipo fluid -->
                 <a class="flex items-center" href="index.html">
@@ -44,17 +44,23 @@
 
             </div>
 
-            <div class="container max-w-full mx-auto sm:px-4">
+            <div class="container flex flex-wrap max-w-full mx-auto sm:px-4 items-center">
                 <!-- boton para cuando el display sea menor -->
-                <button
-                    class="py-1 px-2 text-md leading-normal bg-transparent border border-transparent rounded mt-3 mb-1"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
-                    aria-expanded="false">
-                    <span class="px-5 py-1 border border-gray-600 rounded"></span>
+                <button type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    data-collapse-toggle="menu" aria-controls="menu" aria-expanded="false">
+                    <span class="sr-only px-5 py-1 border border-gray-600 rounded"></span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
                 </button>
 
+
                 <!-- div todos los elementos, el id lo usaremos para refernciarlo y así llamoarlo desde el boton -->
-                <div class="hidden flex-grow items-center justify-around lg:flex id=" menu">
+                <div class="hidden flex-grow items-center justify-around lg:flex" id="menu">
                     <ul class="flex flex-wrap list-reset pl-0 mb-0 text-center">
                         <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
                         <li class="">
