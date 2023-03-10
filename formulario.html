@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
-    <link rel="shortcut icon" type="image" href="images/logo/logo.ico">
+    <link rel="shortcut icon" type="image/ico" href="images/logo/logo.ico">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
@@ -64,7 +64,7 @@
                 <!-- div todos los elementos, el id lo usaremos para refernciarlo y así llamoarlo desde el boton -->
                 <div class="collapse navbar-collapse justify-content-around d-lg-flex align-items-center" id="menu">
                     <ul class="navbar-nav text-center">
-                        <hr class="d-lg-none border border-info border-1 opacity-50">
+
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">
                                 <span>Inicio</span>
@@ -108,7 +108,7 @@
                             <hr class="d-lg-none border border-info border-1 opacity-50">
                         </li>
 
-                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link" href="ranking.html">
@@ -181,7 +181,8 @@
                         <form action="formulario.html" class="was-validated">
                             <div class="mb-4"><!-- con martin bot de 4 -->
                                 <label for="email" class="form-label"> Email</label>
-                                <input type="email" class="form-control" name="email" required> <!-- .is-invalid and .is-valid. para que ponga el check verde o el simbolo de error -->
+                                <input type="email" class="form-control" id="email" required>
+                                <!-- .is-invalid and .is-valid. para que ponga el check verde o el simbolo de error -->
                                 <div class="valid-feedback">
                                     Tiene buena pinta!
                                 </div>
@@ -189,7 +190,7 @@
                             </div>
                             <div class="mb-4">
                                 <label for="pass" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" name="pass" required>
+                                <input type="password" class="form-control" id="pass" required>
                             </div>
                             <div class="mb-4 form-check "><!-- Para el checkbox, form-check le da un espaciado -->
                                 <label for="conectado" class="form-check-label">Mantenerme conectado</label>
@@ -212,8 +213,7 @@
                             </div>
                             <div class="row mt-2"><!-- una fila en line que tendrá dos columnas que usaremos -->
                                 <div class="col">
-                                    <button
-                                        class="btn btn-outline-primary w-100 my-1"><!-- botón que con outline no se rellena el color, solo el borde y con hover se rellene -->
+                                    <a class="btn btn-outline-primary w-100 my-1"><!-- botón que con outline no se rellena el color, solo el borde y con hover se rellene -->
                                         <div class="row align-items-center">
                                             <!-- centrar los elementos de forma vertical -->
                                             <div class="col-2 d-none d-md-block">
@@ -223,11 +223,10 @@
                                                 Facebook
                                             </div>
                                         </div>
-                                    </button>
+                                    </a>
                                 </div>
                                 <div class="col">
-                                    <button
-                                        class="btn btn-outline-danger w-100 my-1"><!-- botón que con outline no se rellena el color, solo el borde y con hover se rellene -->
+                                    <a class="btn btn-outline-danger w-100 my-1"><!-- botón que con outline no se rellena el color, solo el borde y con hover se rellene -->
                                         <div class="row align-items-center">
                                             <!-- centrar los elementos de forma vertical -->
                                             <div class="col-2 d-none d-md-block">
@@ -237,6 +236,7 @@
                                                 Google
                                             </div>
                                         </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +244,7 @@
                 </div>
             </div>
 
-            
+
 
 
         </section>

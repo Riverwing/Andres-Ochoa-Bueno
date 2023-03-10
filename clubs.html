@@ -7,13 +7,11 @@
     <title>Clubs</title>
     <link href="tailwind/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="tailwind/dist/css/index.min.css" />
-    <link rel="shortcut icon" type="image" href="images/logo/logo.ico">
+    <link rel="shortcut icon" type="image/ico" href="images/logo/logo.ico">
     <!--   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <style>
-
- 
         #logo {
             max-height: 15vh;
         }
@@ -75,7 +73,7 @@
                 <!-- div todos los elementos, el id lo usaremos para refernciarlo y así llamoarlo desde el boton -->
                 <div class="hidden flex-grow items-center justify-around lg:flex" id="menu">
                     <ul class="flex flex-wrap list-reset pl-0 mb-0 text-center">
-                        <hr class="lg:hidden border border-teal-500 border-1 opacity-50">
+
                         <li class="">
                             <a class="inline-block py-2 px-4 no-underline" href="index.html">
                                 <span class="dark:hover:text-white">Inicio</span>
@@ -104,23 +102,23 @@
                                                 <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
                                                 <a href="palas.html"
                                                     class="text-gray-700 block px-4 py-2 text-sm hover:bg-blue-500"
-                                                    role="menuitem" tabindex="-1" id="menu-item-0">Palas</a>
+                                                    tabindex="-1" id="menu-item-0">Palas</a>
                                             </li>
                                             <li>
                                                 <a href="partes.html"
                                                     class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
-                                                    role="menuitem" tabindex="-1" id="menu-item-1">Partes pala</a>
+                                                    tabindex="-1" id="menu-item-1">Partes pala</a>
                                             </li>
                                             <li>
                                                 <a href="pista.html"
                                                     class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
-                                                    role="menuitem" tabindex="-1" id="menu-item-2">Pista de padel</a>
+                                                    tabindex="-1" id="menu-item-2">Pista de padel</a>
                                             </li>
 
                                             <li>
                                                 <a href="pelota.html"
                                                     class="text-gray-700 block px-4 py-2 text-sm  hover:bg-blue-500"
-                                                    role="menuitem" tabindex="-1" id="menu-item-2">Pelota de padel</a>
+                                                    tabindex="-1" id="menu-item-3">Pelota de padel</a>
                                             </li>
                                         </ul>
 
@@ -213,54 +211,57 @@
                     <!-- Primer club -->
                     <div class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none c-item"
                         data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
-                        <img src="images/clubs/regal.jpg" class="block w-full"
-                            alt="regal" />
+                        <img src="images/clubs/regal.jpg" class="block w-full" alt="regal" />
                         <div class="absolute inset-x-[15%] bottom-1/4 hidden py-5 text-center text-black md:block">
                             <h5 class="text-xl p-5">REGAL CLUB</h5>
-                            <a href="https://goo.gl/maps/NRpxUbiaWQqnE3zz6" target="_blank">
-                                <button class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                    </svg>
-                                
-                                    UBICACIÓN
-                                  </button>
+                            <a href="https://goo.gl/maps/NRpxUbiaWQqnE3zz6" target="_blank"
+                                class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                </svg>
+
+                                UBICACIÓN
+
                             </a>
                         </div>
                     </div>
                     <!-- Segundo club-->
                     <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  c-item"
                         data-te-carousel-fade data-te-carousel-item>
-                        <img src="images/clubs/padelzgz.jpg" class="block w-full"
-                            alt="padel zgz" />
+                        <img src="images/clubs/padelzgz.jpg" class="block w-full" alt="padel zgz" />
                         <div class="absolute inset-x-[15%] bottom-1/4 hidden py-5 text-center text-black md:block">
                             <h5 class="text-xl p-5">PADEL ZARAGOZA</h5>
-                            <a href="https://goo.gl/maps/A9yUpFATuK1vuvX66" target="_blank">
-                                <button class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                    </svg>
-                                
-                                    UBICACIÓN
-                                  </button>
+                            <a href="https://goo.gl/maps/A9yUpFATuK1vuvX66" target="_blank"
+                                class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                </svg>
+
+                                UBICACIÓN
+
                             </a>
                         </div>
                     </div>
                     <!-- Tercer club-->
                     <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none  c-item"
                         data-te-carousel-fade data-te-carousel-item>
-                        <img src="images/clubs/indoor2.png" class="block w-full"
-                            alt="padel indoor" />
+                        <img src="images/clubs/indoor2.png" class="block w-full" alt="padel indoor" />
                         <div class="absolute inset-x-[15%] bottom-1/4 hidden py-5 text-center text-black md:block">
                             <h5 class="text-xl p-5">PADEL INDOOR ARAGON</h5>
-                            <a href="https://goo.gl/maps/72qR54UBYVxVBWe69" target="_blank">
-                                <button class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-                                    </svg>
-                                
-                                    UBICACIÓN
-                                  </button>
+                            <a href="https://goo.gl/maps/72qR54UBYVxVBWe69" target="_blank"
+                                class="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                                </svg>
+
+                                UBICACIÓN
+
                             </a>
                         </div>
                     </div>
