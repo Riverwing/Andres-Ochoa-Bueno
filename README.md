@@ -6,7 +6,10 @@ La tarea trata sobre un sitio web con información sobre el pádel.
 
 En documents aparece la memoria.
 
-A continuación pasaremos a detallar los framework utilizados.
+## DESPLIEGUE
+https://riverwing.github.io/Andres-Ochoa-Bueno/
+
+## FRAMEWORKS UTILIZADOS
 
 
 
