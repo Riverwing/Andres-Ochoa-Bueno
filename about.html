@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <style>
-      
         #logo {
             max-height: 15vh;
         }
@@ -27,6 +26,56 @@
 
         span {
             width: fit-content;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* PARA EL IDIOMA */
+
+        [for="ctrl"] {
+            display: inline-block;
+            padding: 1em 2em;
+            background-color: yellowgreen;
+            box-shadow: 0 2px 0 green;
+            color: #FFFF00;
+            cursor: pointer;
+            border-radius: 3px;           
+            transition: all ease 1s;
+           
+        }
+
+        #ctrl {
+            position: absolute;
+            opacity: 0;
+        }
+
+        [for="ctrl"]::before {
+            content: 'change language';
+        }
+
+        #ctrl:checked~[for="ctrl"]::before {
+            content: 'cambiar idioma';
+        }
+
+
+        #ctrl:checked~* .sp,
+        .en {
+            position: absolute;
+            opacity: 0;
+            width: 1px;
+            pointer-events: none
+        }
+
+        #ctrl:checked~* .en {
+            display: block;
+            position: static;
+            opacity: 1;
+            width: 100%;
+            pointer-events: initial
         }
     </style>
 </head>
@@ -75,7 +124,7 @@
 
                                 <button type="button" class="inline-flex w-full justify-center gap-x-1.5  px-3 py-2 "
                                     data-te-collapse-init data-te-target="#menu_desplegable">
-                                    <span >Pádel</span>
+                                    <span>Pádel</span>
                                     <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
                                         <path fill-rule="evenodd"
@@ -179,13 +228,35 @@
         </section>
 
         <!-- SOBRE NOSOSTROS -->
+        <section class="text-center">
+            <input type="checkbox" id="ctrl" />
 
-        <h3 class="text-center p-1 hidden md:block text-2xl">Palas de pádel</h3>
+            <h3 class=" p-1 hidden md:block text-2xl sp">Sobre nosotros</h3>
 
-        <section class="py-1">
-            
-
-
+            <div
+                class=" bg-bootstrap-gray text-white w-1/2 mx-auto grid max-w-6xl  grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-3 rounded-xl mb-2.5">
+                <p class="sp text-left">Mi nombre es Andrés y esto ha sido una tarea realizada para la asignatura de diseño de
+                    interfaces. </p>
+                <p class="en text-left">My name is Andrés and this has been a task done for the interface design subject.</p>
+                <p class="sp text-left">En esta página hemos utilizado lo aprendido a lo largo del curso y hemos ido evolucionando
+                    a
+                    medida que
+                    hemos ido adquiriendo conocimientos. La parte más díficil ha sido el Framework Tailwind, el cúal
+                    todavía
+                    necesitamos más práctica. Hemos adjuntado al proyecto una memoria en la que indicamos donde hemos
+                    sacado
+                    algunas ideas, componentes e información.</p>
+                <p class="en text-left">On this page we have used what we have learned throughout the course and we have evolved
+                    as we
+                    We have been acquiring knowledge. The hardest part has been the Tailwind Framework, which still
+                    we need more practice. We have attached to the project a report in which we indicate where we have
+                    taken
+                    some ideas, components and information</p>
+                <div class="relative flex items-end overflow-hidden rounded-xl">
+                    <img src="images/logo/logo-oscuro.png" alt="pala" />
+                </div>
+            </div>
+            <label for="ctrl" class="ctrl"></label>
 
         </section>
     </main>
