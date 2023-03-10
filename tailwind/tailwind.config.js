@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ "../clubs.html","../palas.html"],
+  content: ["../clubs.html", "../palas.html"],
   theme: {
     extend: {
 
@@ -30,10 +30,11 @@ module.exports = {
 
     },
   },
-  variants:{
-    extend:{
-      display:['group-focus']
+  variants: {
+    extend: {
+      display: ['group-focus']
     },
   },
-  plugins: [],
+  plugins: [    
+  ],
 }

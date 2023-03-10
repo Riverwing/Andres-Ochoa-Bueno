@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palas</title>
-    <link href="tailwind/dist/output.css" rel="stylesheet">
-    <link href="tailwind/src/input.css" rel="stylesheet">
+    <link href="tailwind/dist/output.css" rel="stylesheet">  
     <link rel="shortcut icon" type="image" href="images/logo/logo.ico">
     <!--   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="bootstrap/node_modules/bootstrap-icons/font/bootstrap-icons.css">
@@ -47,16 +46,16 @@
             <div class="container flex flex-wrap max-w-full mx-auto sm:px-4 items-center">
                 <!-- boton para cuando el display sea menor -->
                 <button type="button"
-                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    data-collapse-toggle="menu" aria-controls="menu" aria-expanded="false">
-                    <span class="sr-only px-5 py-1 border border-gray-600 rounded"></span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
+                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+                <span class="sr-only px-5 py-1 border border-gray-600 rounded"></span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
 
 
                 <!-- div todos los elementos, el id lo usaremos para refernciarlo y así llamoarlo desde el boton -->
@@ -73,7 +72,8 @@
                         <li class=" relative ">
                             <div class="relative inline-block text-left">
 
-                                <button type="button" class="inline-flex w-full justify-center gap-x-1.5  px-3 py-2 ">
+                                <button type="button" class="inline-flex w-full justify-center gap-x-1.5  px-3 py-2 "
+                                data-te-collapse-init data-te-target="#menu_desplegable">
                                     <span class="text-white">Pádel</span>
                                     <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                         aria-hidden="true">
@@ -83,7 +83,7 @@
                                     </svg>
                                 </button>
 
-                                <div id="menu"
+                                <div id="menu_desplegable"
                                     class="absolute hidden focus:block mt-2 w-56 bg-white shadow-lg focus:outline-none">
                                     <div class="py-1">
                                         <ul class="text-left">
@@ -443,6 +443,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="tailwind/dist/js/index.min.js"></script>
 
 </body>
 
